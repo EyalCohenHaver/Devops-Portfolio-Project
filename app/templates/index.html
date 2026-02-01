@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
-        .image-gallery img {
-            max-width: 200px;
-            max-height: 200px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <h1>Image Gallery</h1>
-    <div class="image-gallery">
-        {% for url in image_urls %}
-            <img src="{{ url }}" alt="S3 Image">
-        {% endfor %}
+  <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">MyWebsite</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container">
+        <h1>Home</h1>
+        <p>Welcome to my website.</p>
     </div>
+  </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 MyWebsite</p>
+        </div>
+    </footer>
 
 </body>
 </html>

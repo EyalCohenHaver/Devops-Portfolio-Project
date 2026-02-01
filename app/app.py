@@ -5,7 +5,7 @@ from botocore.exceptions import NoCredentialsError
 app = Flask(__name__)
 
 # AWS S3 configuration
-S3_BUCKET_NAME = 'your-bucket-name'  # Replace with your S3 bucket name
+S3_BUCKET_NAME = 'photo-bucket'  # Replace with your S3 bucket name
 AWS_REGION = 'us-east-1'  # Replace with the appropriate region of your bucket
 
 # Initialize S3 client
